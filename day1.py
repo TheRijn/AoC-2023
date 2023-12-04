@@ -4,7 +4,7 @@ total1 = 0
 total2 = 0
 
 
-def find_number(line: str) -> int|None:
+def find_number(line: str) -> int | None:
     numbers = {
         "one": 1,
         "two": 2,
@@ -26,7 +26,7 @@ def find_number(line: str) -> int|None:
 
 for line in fileinput.input():
     digits1: list[str] = []
-    digits2: list[int|str] = []
+    digits2: list[int | str] = []
 
     for i, char in enumerate(line.strip()):
         if char.isdigit():
