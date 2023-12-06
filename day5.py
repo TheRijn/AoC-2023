@@ -4,7 +4,7 @@ reader = fileinput.input()
 
 seeds = [int(x) for x in next(reader).strip().split(":")[1].split()]
 
-next(reader) # skip empty
+next(reader)  # skip empty
 
 maps: list[list[tuple[range, range]]] = []
 
